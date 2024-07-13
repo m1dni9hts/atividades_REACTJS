@@ -2,7 +2,6 @@ import './App.css';
 import './components/Login';
 import './components/Gerenciamento';
 import './components/Forms';
-import './components/Temas';
 import './components/To-do';
 import './components/Time';
 import './components/Fatorial';
@@ -14,9 +13,12 @@ function App() {
         
       </header>
       <main className="main">
-
-
-
+        <Fatorial/> 
+        <Forms/> 
+        <Gerenciamento/> 
+        <Login/> 
+        <Time/> 
+        <To-do/>
       </main>
       <footer className="footer">
 
