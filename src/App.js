@@ -1,14 +1,26 @@
-import './App.css';
+// App.js
+import React from 'react';
+import Forms from './components/Forms';
+import Relogio from './components/Time';
+import Fatorial from './components/Fatorial';
+import ListaTarefas from './components/To-do';
+import Login, { FornecerUsuario } from './components/Login';
+import GerenciamentoOrcamento from './components/Gerenciamento';
+import './App.css'; 
 
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-      </header>
-    </div>
+    <FornecerUsuario>
+      <div className="container">
+        <Forms />
+        <Relogio />
+        <Fatorial />
+        <ListaTarefas />
+        <Login />
+        <GerenciamentoOrcamento />
+      </div>
+    </FornecerUsuario>
   );
-}
+};
 
 export default App;

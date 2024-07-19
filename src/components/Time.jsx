@@ -1,37 +1,34 @@
+// Time.js
+import React, { useState, useEffect } from 'react';
+import '../App.css';
 
-import './App.css';
-import Contador from './components/Contador';
-import Lista from './components/Lista';
-import Textos from './components/Textos';
-import React from 'react';
-import { ProvedorTema } from './components/TemaContexto';
-import AlternarTema from './components/AlternarTema';
-import ComponentePrincipal from './components/ComponentePrincipal';
+const Relogio = () => {
+  const [hora, setHora] = useState(new Date().toLocaleTimeString());
+  const [mensagemVisivel, setMensagemVisivel] = useState(true);
 
-function App() {
+  useEffect(() => {
+    const intervaloId = setInterval(() => {
+      setHora(new Date().toLocaleTimeString());
+    }, 1000);
+
+    const timeoutId = setTimeout(() => {
+      setMensagemVisivel(!mensagemVisivel);
+    }, 3000);
+
+    return () => {
+      clearInterval(intervaloId);
+      clearTimeout(timeoutId);
+    };
+  }, [mensagemVisivel]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <Contador/>
-        <Textos/>
-        <Lista/>
-        <ProvedorTema>
-          <div className="App">
-            <AlternarTema />
-            <ComponentePrincipal />
-          </div>
-        </ProvedorTema>
+    <div className="component">
+      <header>
+        <h2>Hora Atual: {hora}</h2>
       </header>
+      {mensagemVisivel && <p>Esta mensagem aparece e desaparece a cada 3 segundos</p>}
     </div>
   );
-}
+};
 
-export default App;
-
-import react from 'react';
-
-function Login() {
-
-    }
-
-export default Login;
+export default Relogio;
