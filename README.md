@@ -1,7 +1,7 @@
 # Exercícios de Fixação
 
 ## Descrição
-Esta aplicação web contém exercíos de React para praticar.
+Esta aplicação web contém exercícios de React para praticar.
 
 ## Tecnologias Utilizadas
 - React
