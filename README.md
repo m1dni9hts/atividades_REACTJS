@@ -1,0 +1,23 @@
+# Exercícios de Fixação
+
+## Descrição
+Esta aplicação web contém exercíos de React para praticar.
+
+## Tecnologias Utilizadas
+- React
+- CSS
+- GitBash
+
+## Instruções de Instalação
+1. Clone o repositório no GitBash da sua Área de Trabalho:
+   ```bash
+   git clone https://github.com/m1dni9hts/Atividades_REACTJS.git
+2. Entre na pasta do repositório:
+   ```bash
+   cd Atividades_REACTJS
+3. Instale o node_modules:
+   ```bash
+   npm i
+4. Rode a aplicação:
+   ```bash
+   npm start
