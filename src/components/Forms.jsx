@@ -1,6 +1,6 @@
 // Forms.js
 import React, { useRef } from 'react';
-import '../App.css'; // Importe o CSS
+import '../App.css'; // 
 
 const Forms = () => {
   const inputRef = useRef(null);

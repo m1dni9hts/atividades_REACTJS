@@ -1,6 +1,6 @@
 // Gerenciamento.js
 import React, { useState } from 'react';
-import '../App.css'; // Importe o CSS
+import '../App.css'; 
 
 const GerenciamentoOrcamento = () => {
   const [despesas, setDespesas] = useState([]);

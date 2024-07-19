@@ -1,6 +1,6 @@
 // Fatorial.js
 import React, { useState, useMemo } from 'react';
-import '../App.css'; // Importe o CSS
+import '../App.css'; 
 
 const fatorial = (n) => {
   if (n <= 0) return 1;

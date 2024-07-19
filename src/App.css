@@ -2,21 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
-body {
+html, body {
   font-family: 'Outfit', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 100px;
 }
 
 .component {
-  margin-bottom: 20px;
+  margin-bottom: 100px;
+
 }
 
 header {
@@ -35,6 +33,7 @@ input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-family: 'Outfit', sans-serif;
 }
 
 button {
@@ -45,6 +44,7 @@ button {
   color: white;
   cursor: pointer;
   font-weight: 450;
+  font-family: 'Outfit', sans-serif;
 }
 
 button:hover {
@@ -79,4 +79,11 @@ button:hover {
   margin-right: 25px;
   position: relative;
   bottom: 3px;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
